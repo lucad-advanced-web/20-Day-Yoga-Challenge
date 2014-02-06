@@ -6,16 +6,35 @@ below in the MediaQueries for LARGER screens.*/
 body  {
       background: #000000; /* Black */
       font-family: 'Poiret One', cursive;
-      
 
 }
+
+	.numbernav img {
+    			width: 49%;
+}
+
+
 /*******  BEGIN MEDIA QUERIES *******/
 /* 481px - 768px */
 @media screen and (min-width:480px) {
       body  {
-            background: #FF0000;/* Red */
-            
-	} 
+      
+        	background:url(desktop_mockup.png) no-repeat;
+				
+        } 
+        
+        .numbernav{
+           	width: 325px;
+           	float: left;
+           
+           }
+        
+        .numbernav img{
+        			width: 49%;
+        }
+        
+        
+        
 }
 
 
@@ -26,7 +45,20 @@ body  {
 @media screen and (min-width:768px) {
       body  {
             background: #00FF00;   /* Green */
-	} 
+            
+		} 
+		
+		.numbernav{
+           	width: 325px;
+           	float: left;
+           
+           }
+	
+		.numbernav img{
+        			width: 15%;
+        }
+	
+		
 }
 
 
@@ -35,5 +67,19 @@ body  {
 /* 1024px and Larger  */
 @media screen and (min-width:1024px) {
       body  {
-} }
+      
+    
+} 
+           .numbernav{
+           	width: 325px;
+           	float: left;
+           
+           }
+	        
+	        	.numbernav img{
+        			width: 150px;
+        }
+    
+
+}
 
