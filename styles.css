@@ -5,18 +5,33 @@ below in the MediaQueries for LARGER screens.*/
 
 body  {
       background: #000000; /* Black */
+      font-family: 'Poiret One', cursive;
+      
+
 }
 /*******  BEGIN MEDIA QUERIES *******/
 /* 481px - 768px */
 @media screen and (min-width:480px) {
       body  {
             background: #FF0000;/* Red */
-} }
+            
+	} 
+}
+
+
+
+
+
 /* 768px - 1024px */
 @media screen and (min-width:768px) {
       body  {
             background: #00FF00;   /* Green */
-} }
+	} 
+}
+
+
+
+
 /* 1024px and Larger  */
 @media screen and (min-width:1024px) {
       body  {
