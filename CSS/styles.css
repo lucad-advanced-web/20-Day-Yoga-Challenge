@@ -1,0 +1,24 @@
+/* Just plain old CSS. This section is for all styles that will go for all
+viewport sizes. Also this is for small screen specific. You can always override
+below in the MediaQueries for LARGER screens.*/
+
+
+body  {
+      background: #000000; /* Black */
+}
+/*******  BEGIN MEDIA QUERIES *******/
+/* 481px - 768px */
+@media screen and (min-width:480px) {
+      body  {
+            background: #FF0000;/* Red */
+} }
+/* 768px - 1024px */
+@media screen and (min-width:768px) {
+      body  {
+            background: #00FF00;   /* Green */
+} }
+/* 1024px and Larger  */
+@media screen and (min-width:1024px) {
+      body  {
+} }
+
