@@ -26,13 +26,22 @@ body  {
         .numbernav{
            	width: 325px;
            	float: left;
-           	padding-right: 25px;
+           	/*padding-right: 25px;*/
            
-           }
+        }
         
         .numbernav img{
-        			width: 49%;
+        	width: 49%;
         }
+        
+        .posebox img{
+        	width: 49%;	
+        
+		}
+		
+		description img{
+			width: 49%;
+		}
         
         
         
@@ -61,13 +70,12 @@ body  {
         	width: 49%;
         }
         
-        .posebox{
-        	
+        .posebox img{
         
         
 		}
 		
-		.description{
+		.description img{
 			
 		}
 		
@@ -87,15 +95,29 @@ body  {
       
     
 } 
-           .numbernav{
+        .numbernav{
            	width: 325px;
            	float: left;
            
-           }
-	        
-	        	.numbernav img{
-        			width: 150px;
         }
+	        
+	    .numbernav img{
+        	width: 150px;
+        }
+        
+		.posebox{
+			float: left;
+			width: 500px;
+		}
+           
+        .posebox img{
+        	width: 500px;	
+        
+		}
+		
+		description img{
+			width: 150px;
+		}
     
 
 }
