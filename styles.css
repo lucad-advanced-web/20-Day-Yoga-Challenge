@@ -2,32 +2,57 @@
 viewport sizes. Also this is for small screen specific. You can always override
 below in the MediaQueries for LARGER screens.*/
 
-
+/*make all changed to the mobile here*/
 body  {
-      background: #000000; /* Black */
+      /*background: #000000; */ /* Black */
+      background:url(desktop_mockup.png);
       font-family: 'Poiret One', cursive;
 
+}
+
+p{
+	font-family: 'georgia', serif;
+	/*opacity: 0.3;
+	background-color: hsla(0, 100%, 50%, 0.5);*/
+	padding: 10px;
+	line-height: 24px;
+}
+
+h1{
+	text-align: right;
+	color: #f9e498;
+	margin-top: 30px;
+	padding-right: 4px;
+}
+
+h2{
+	color: #f9e498;
+	font-size: 20px;
 }
 
 	.numbernav img {
     			width: 49%;
 }
 
+	.posebox{
+		width: 49%;
+		opacity: 0.5;
+	}
+
+	.box{
+  		border-bottom: 1px #f9e498;
+  		font-size: 30px;
+  	} 
+
 
 /*******  BEGIN MEDIA QUERIES *******/
-/* 481px - 768px */
+/* 481px - 768px mobile */
 @media screen and (min-width:480px) {
-      body  {
-      
-        	background:url(desktop_mockup.png) no-repeat;
-				
-        } 
         
         .numbernav{
            	width: 325px;
            	float: left;
            	/*padding-right: 25px;*/
-           
         }
         
         .numbernav img{
@@ -35,10 +60,10 @@ body  {
         }
         
         .posebox img{
-        	width: 49%;	
-        
+        	/*max-width: 100%;*/
 		}
 		
+
 		description img{
 			width: 49%;
 		}
@@ -51,19 +76,18 @@ body  {
 
 
 
-/* 768px - 1024px */
+/* 768px - 1024px tablet*/
 @media screen and (min-width:768px) {
 
       	body{
-            background: #00FF00;   /* Green */
-            
-		} 
+           /* background: #00FF00;  */ /* Green */
+            background:url(desktop_mockup.png) no-repeat;
+		}
 	
 		
 		.numbernav{
            	width: 325px;
            	float: left;
-           
         }
 	
 		.numbernav img{
@@ -71,7 +95,6 @@ body  {
         }
         
         .posebox img{
-        
         
 		}
 		
@@ -92,8 +115,7 @@ body  {
 /* 1024px and Larger  */
 @media screen and (min-width:1024px) {
       body  {
-      
-    
+
 } 
         .numbernav{
            	width: 325px;
