@@ -4,30 +4,38 @@ below in the MediaQueries for LARGER screens.*/
 
 /*make all changed to the mobile here*/
 body  {
-      /*background: #000000; */ /* Black */
-      background:url(desktop_mockup.png);
-      font-family: 'Poiret One', cursive;
 
+      background:url(desktop_mockup.png);
+      background-size:cover; /* Makes BG Image span whole window */
+      font-family: 'Poiret One', cursive;
 	}
+
+   .wrapper {
+        width:100%;
+        background-color:rgba(255,255,255,0.5); /*Adds transparent white color to wrapper bg */
+        overflow:auto;
+      }
+
 
 
 	.numbernav img {
-    	width: 49%;
+    	width: 48%;
 	}
 
 	.posebox{
-		width: 49%;
+		width: 100%;
 		opacity: 0.5;
 	}
 
+  .numbernav {
+    width: 100%;
+  }
+
 	.box2{
-		width:500px;
+		/* width:500px; */ /* Moved from px to % */
+    width:100%;
 		float: right;
 	}
-
-  	
-
-       	
 
 
 
@@ -36,13 +44,21 @@ body  {
 @media screen and (min-width:480px) {
         
         .numbernav{
-           	width: 325px;
+           	width: 48%;
            	float: left;
            	/*padding-right: 25px;*/
         }
+
+    .box2 {
+      width:48%;
+    }
         
+    .wrapper {
+        width:100%;
+      }
+
         .numbernav img{
-        	width: 49%;
+        	width: 48%;
         }
         
         .posebox img{
@@ -50,7 +66,7 @@ body  {
 		}
 		
 
-		description img{
+		.description img{
 			width: 49%;
 		}
 		
@@ -69,10 +85,15 @@ body  {
 
       	body{
            /* background: #00FF00;  */ /* Green */
-            background:url(desktop_mockup.png) no-repeat;
+            /* background:url(desktop_mockup.png) no-repeat; */
+
+            /* No need to declare the background again if written outside of media queries. It will span all of these */
 		}
 		
-	
+	.wrapper {
+        width:100%;
+        margin:0 auto; /*Centers the DIV */
+      }
 		
 		.numbernav{
            	width: 325px;
@@ -105,8 +126,16 @@ body  {
 @media screen and (min-width:1024px) {
       body  {
 
-} 
-        .numbernav{
+      } 
+
+
+      .wrapper {
+        width:1100px;
+        margin:0 auto; /*Centers the DIV */
+      }
+
+
+      .numbernav{
            	width: 325px;
            	float: left;
            
