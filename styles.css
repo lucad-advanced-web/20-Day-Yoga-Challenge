@@ -6,35 +6,46 @@ below in the MediaQueries for LARGER screens.*/
 body  {
       /*background: #000000; */ /* Black */
       background:url(desktop_mockup.png);
+      background-size: cover; /* as the webpage gets longer, the image gets larger too */
+      /*background-size: 1100px;*/
       font-family: 'Poiret One', cursive;
 
 }
 
 p{
 	font-family: 'georgia', serif;
-	/*opacity: 0.3;la(0, 100%, 50%, 0.5);*/
 	padding: 10px;
 	line-height: 24px;
 }
 
 h1{
-	text-align: right;
-	color: #f9e498;
+	/*text-align: right;
+	color: #f9e498;*/
 	margin-top: 30px;
 	padding-right: 4px;
 }
 
 h2{
 	color: #f9e498;
-	font-size: 20px;
+	font-size: 30px;
 }
+
+	.wrapper {
+        width:100%;
+        background-color:rgba(255,255,255,0.5); /*Adds transparent white color to wrapper bg */
+        overflow:auto;
+      }
 
 	.numbernav img {
-    			width: 49%;
+    			width: 48%;
 }
 
-	.posebox{
-		width: 49%;
+	.nubernav{
+	width: 100%;
+}
+
+	img {
+		/*width: 48%;*/ /* use this to change the size of the images */
 		opacity: 0.5;
 	}
 
@@ -49,22 +60,30 @@ h2{
 @media screen and (min-width:480px) {
         
         .numbernav{
-           	width: 325px;
+           	width: 48%;
            	float: left;
            	/*padding-right: 25px;*/
         }
         
         .numbernav img{
-        	width: 49%;
+        	width: 48%;
         }
         
         .posebox img{
         	/*max-width: 100%;*/
 		}
+
+		.wrapper{
+			width: 100%;
+		}
 		
 
-		description img{
+		.description img{
 			width: 49%;
+		}
+
+		.box2{
+			width: 48%;
 		}
 		
 
@@ -80,16 +99,18 @@ h2{
 /* 768px - 1024px tablet*/
 @media screen and (min-width:768px) {
 
-      	body{
-           /* background: #00FF00;  */ /* Green */
-            background:url(desktop_mockup.png) no-repeat;
-		}
+      	body{}
 		
 		
 		.box2{
-			float:right;		
+			float: right;
+			width: 48%;		
 		}
 	
+		.wrapper{
+			width: 100%;
+			margin: 0 auto;
+		}
 		
 		.numbernav{
            	width: 325px;
@@ -106,19 +127,23 @@ h2{
         
         .posebox img{
         	float:right;
-        
+		}
+
+		.intro{
+       		background-color: red;
+		}    
+		
+		p.description img{	
+			font-family: 'georgia', serif;
+			margin-left: 20px;
+			margin-right: 20px;
 		}
 		
-		.description img{
-			
-		}
-		
-		tree{
+		.tree{
 			float:right;
+		} /* not sure what this is */
 		
-		}
-		
-		p{
+		/*p{
 			background-color: #f9e498;
 			width: 600px;
 			float: right;
@@ -133,7 +158,7 @@ h2{
 		
 		h1{
 			float:right;
-		}
+		}*/
 		
 		
 		
@@ -148,13 +173,16 @@ h2{
 
 /* 1024px and Larger  */
 @media screen and (min-width:1024px) {
-      body  {
+      body{} 
 
-} 
+		.wrapper{
+			width: 1100px;
+			margin: 0 auto;
+		}
+
         .numbernav{
            	width: 325px;
            	float: left;
-           
         }
 	        
 	    .numbernav img{
@@ -168,11 +196,14 @@ h2{
            
         .posebox img{
         	width: 500px;	
-        
 		}
 		
-		description img{
+		.description img{
 			width: 150px;
+		}
+
+		.box{
+			width: 48%;
 		}
     
 

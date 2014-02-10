@@ -6,7 +6,7 @@ below in the MediaQueries for LARGER screens.*/
 body  {
 
       background:url(desktop_mockup.png);
-      background-size:cover; /* Makes BG Image span whole window */
+      background-size: cover; /* Makes BG Image span whole window */
       font-family: 'Poiret One', cursive;
 	}
 
