@@ -53,6 +53,12 @@ h2{
   		border-bottom: 1px #f9e498;
   		font-size: 30px;
   	} 
+  	
+  	.logo{
+  		width: 100% no repeat;
+  		position: center;
+  		
+  	}
 
 
 /*******  BEGIN MEDIA QUERIES *******/

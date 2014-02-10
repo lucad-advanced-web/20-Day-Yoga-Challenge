@@ -14,7 +14,7 @@ body  {
         width:100%;
         background-color:rgba(255,255,255,0.5); /*Adds transparent white color to wrapper bg */
         overflow:auto;
-      }
+    }
 
 
 
@@ -22,20 +22,28 @@ body  {
     	width: 48%;
 	}
 
-	.posebox{
-		width: 100%;
-		opacity: 0.5;
-	}
 
-  .numbernav {
-    width: 100%;
-  }
+  	.numbernav {
+    	width: 100%;
+  	}
 
 	.box2{
 		/* width:500px; */ /* Moved from px to % */
-    width:100%;
+   		width:100%;
 		float: right;
 	}
+	
+    p.description{
+       	font-family: 'georgia', serif;
+       	background-color:rgba(255,255,255,0.5);
+       	padding: 25px;
+       	
+    }
+    
+    .intro{
+       background-color:rgba(255,255,255,0.5);
+	}  
+      
 
 
 
@@ -43,36 +51,25 @@ body  {
 /* 481px - 768px mobile */
 @media screen and (min-width:480px) {
         
-        .numbernav{
-           	width: 48%;
-           	float: left;
-           	/*padding-right: 25px;*/
-        }
+    .numbernav{
+    	width: 48%;
+        float: left;
+        /*padding-right: 25px;*/
+    }
 
     .box2 {
-      width:48%;
+     	width:49%;
     }
         
     .wrapper {
         width:100%;
-      }
+    }
 
-        .numbernav img{
-        	width: 48%;
-        }
-        
-        .posebox img{
-        	/*max-width: 100%;*/
-		}
+    .numbernav img{
+        width: 48%;
+    }
 		
-
-		.description img{
-			width: 49%;
-		}
-		
-
-        
-        
+       
         
 }
 
@@ -85,7 +82,7 @@ body  {
 
       	body{
            /* background: #00FF00;  */ /* Green */
-            /* background:url(desktop_mockup.png) no-repeat; */
+        /* background:url(desktop_mockup.png) no-repeat; */
 
             /* No need to declare the background again if written outside of media queries. It will span all of these */
 		}
@@ -93,27 +90,22 @@ body  {
 	.wrapper {
         width:100%;
         margin:0 auto; /*Centers the DIV */
-      }
+    }
 		
-		.numbernav{
-           	width: 325px;
-           	float: left;
-        }
+	.numbernav{
+        width: 325px;
+        float: left;
+    }
 	
-		.numbernav img{
-        	width: 49%;
-        }
+	.numbernav img{
+        width: 49%;
+    }
         
-  	 	.intro{
-       		background-color: red;
-		}    
+  	 .intro{
+       	background-color:rgba(255,255,255,0.5);
+	}    
        
-       
-       p.description{
-       	font-family: 'georgia', serif;
-       	margin-left: 20px;
-       	margin-right: 20px;
-       	}
+    
 		
         
 		
@@ -144,20 +136,9 @@ body  {
 	    .numbernav img{
         	width: 150px;
         }
-        
-		.posebox{
-			float: left;
-			width: 500px;
-		}
            
-        .posebox img{
-        	width: 500px;	
-        
-		}
-		
-		description img{
-			width: 150px;
-		}
+
+
     
 
 }
