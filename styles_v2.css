@@ -38,6 +38,7 @@ below in the MediaQueries for LARGER screens.*/
     padding: 25px;
     line-height: 26px;
     font-size: 16px;
+    letter-spacing: 0.5px;
   }
 
 
@@ -83,6 +84,12 @@ below in the MediaQueries for LARGER screens.*/
     .numbernav img{
         width: 48%;
     }
+
+    .logo{
+        /*width: 100px;
+        margin-bottom: -10px;
+        margin-top: -10px;
+        }*/
        
         
 }
@@ -100,6 +107,10 @@ below in the MediaQueries for LARGER screens.*/
 
             /* No need to declare the background again if written outside of media queries. It will span all of these */
 		}
+
+    img{
+      width: 100%;
+    }
 		
 	.wrapper {
         width:100%;
@@ -114,6 +125,12 @@ below in the MediaQueries for LARGER screens.*/
 	.numbernav img{
         width: 49%;
     }
+
+  .logo{
+        width: 100px;
+        margin-bottom: -10px;
+        margin-top: -10px;
+        }
 	
       
 }
