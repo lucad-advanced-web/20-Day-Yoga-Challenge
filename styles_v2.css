@@ -6,7 +6,7 @@ below in the MediaQueries for LARGER screens.*/
   body  {
 
     background:url(desktop_mockup.png);
-    background-size: cover; /* Makes BG Image span whole window */
+   /* background-size: cover; *//* Makes BG Image span whole window */
     font-family: 'Poiret One', cursive;
   }
 
@@ -40,9 +40,6 @@ below in the MediaQueries for LARGER screens.*/
     font-size: 16px;
   }
 
-  p.font{
-    font-size: 30px;
-  }
 
   .intro{
     /*background-color:rgba(255,255,255,0.5);*/
@@ -68,7 +65,7 @@ below in the MediaQueries for LARGER screens.*/
 /*******  BEGIN MEDIA QUERIES *******/
 /* 481px - 768px mobile */
 @media screen and (min-width:480px) {
-        
+
     .numbernav{
     	width: 48%;
         float: left;
@@ -86,7 +83,6 @@ below in the MediaQueries for LARGER screens.*/
     .numbernav img{
         width: 48%;
     }
-		
        
         
 }
@@ -128,7 +124,7 @@ below in the MediaQueries for LARGER screens.*/
 /* 1024px and Larger  */
 @media screen and (min-width:1024px) {
       body  {
-
+        background-size: 1500px;
       } 
 
       .wrapper {
