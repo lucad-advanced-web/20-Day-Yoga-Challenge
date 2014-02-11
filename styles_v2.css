@@ -3,51 +3,65 @@ viewport sizes. Also this is for small screen specific. You can always override
 below in the MediaQueries for LARGER screens.*/
 
 /*make all changed to the mobile here*/
-body  {
+  body  {
 
-      background:url(desktop_mockup.png);
-      background-size: cover; /* Makes BG Image span whole window */
-      font-family: 'Poiret One', cursive;
-	}
+    background:url(desktop_mockup.png);
+    background-size: cover; /* Makes BG Image span whole window */
+    font-family: 'Poiret One', cursive;
+  }
 
-   .wrapper {
-        width:100%;
-        background-color:rgba(255,255,255,0.5); /*Adds transparent white color to wrapper bg */
-        overflow:auto;
-    }
+  .wrapper {
+    width:100%;
+    /*background-color:rgba(255,255,255,0.5);*/ /*Adds transparent white color to wrapper bg */
+    overflow:auto;
+  }
 
+  .numbernav img {
+    width: 48%;
+  }
 
+  .numbernav {
+    width: 100%;
+  }
 
-	.numbernav img {
-    	width: 48%;
-	}
+  .box2{
+    /* width:500px; */ /* Moved from px to % */
+    width:100%;
+    float: right;
+  }
 
+  p.description{
+    font-family: 'georgia', serif;
+    /*background-color:rgba(255,255,255,0.5);*/
+    border: 3px solid;
+    border-color: #f9e498;
+    padding: 25px;
+    line-height: 26px;
+    font-size: 16px;
+  }
 
-  	.numbernav {
-    	width: 100%;
-  	}
+  p.font{
+    font-size: 30px;
+  }
 
-	.box2{
-		/* width:500px; */ /* Moved from px to % */
-   		width:100%;
-		float: right;
-	}
-	
-    p.description{
-       	font-family: 'georgia', serif;
-       	background-color:rgba(255,255,255,0.5);
-       	padding: 25px;
-       	
-    }
-    
-    .intro{
-       background-color:rgba(255,255,255,0.5);
-	}  
-	
-	.logo{
-		padding: 20px;
-	}
-      
+  .intro{
+    /*background-color:rgba(255,255,255,0.5);*/
+  }  
+
+  .logo{
+    padding: 20px;
+  }
+
+  img{
+    opacity: 0.5;
+  }
+
+  h2{
+    font-size: 40px;
+    color: #f9e498;
+    margin-top: 50px;
+  }
+
 
 
 
@@ -104,17 +118,8 @@ body  {
 	.numbernav img{
         width: 49%;
     }
-        
-  	 .intro{
-       	background-color:rgba(255,255,255,0.5);
-	}  
 	
-	
-       
-    
-		
-        
-		
+      
 }
 
 
@@ -126,7 +131,6 @@ body  {
 
       } 
 
-
       .wrapper {
         width:1100px;
         margin:0 auto; /*Centers the DIV */
@@ -136,7 +140,6 @@ body  {
       .numbernav{
            	width: 325px;
            	float: left;
-           
         }
 	        
 	    .numbernav img{
@@ -144,8 +147,21 @@ body  {
         }
         
         .box2{
-        	margin-right: 100px;
+        	margin-right: 200px;
+          /*width: 550px;*/
         }
+
+        .logo{
+          width: 100px;
+          margin-bottom: -10px;
+          margin-top: -10px;
+        }
+
+      img{
+        width: 100%;
+      }
+
+
            
 
 }
